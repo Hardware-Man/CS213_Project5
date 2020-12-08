@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">CS213_Project5</string>
+    <string name="app_name">NY Museum Prices</string>
+    <string name="met_btn">Metropolitan Museum of Art</string>
+    <string name="modern_art_btn">Museum of Modern Art</string>
+    <string name="natural_history_btn">American Museum of Natural History</string>
+    <string name="guggenheim_btn">Solomon R. Guggenheim Museum</string>
+    <string name="met_pic">met_pic</string>
 </resources>
