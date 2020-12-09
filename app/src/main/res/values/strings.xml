@@ -13,7 +13,8 @@
     <string name="adult">Adult</string>
     <string name="senior">Senior</string>
     <string name="student">Student</string>
-    <string name="adult_ticket_price">Adult Ticket Price:</string>
-    <string name="senior_ticket_price">Senior Ticket Price:</string>
-    <string name="student_ticket_price">Student Ticket Price:</string>
+    <string name="adult_ticket_price">Adult Admission:</string>
+    <string name="senior_ticket_price">Senior Admission:</string>
+    <string name="student_ticket_price">Student Admission:</string>
+    <string name="website_tap_reminder">(Click on image to visit website)</string>
 </resources>
