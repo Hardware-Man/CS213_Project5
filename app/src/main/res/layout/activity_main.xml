@@ -7,63 +7,116 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginLeft="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginRight="1dp"
-        android:layout_marginBottom="1dp"
-        android:orientation="vertical"
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="140dp"
-            android:background="@drawable/met"
-            android:fontFamily="sans-serif-condensed-medium"
-            android:text="@string/met_btn"
-            android:textColor="#FFFFFF"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="match_parent"
-            android:layout_height="140dp"
-            android:background="@drawable/modern_art"
-            android:fontFamily="sans-serif-condensed-medium"
-            android:text="@string/modern_art_btn"
-            android:textColor="#FFEA00"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="match_parent"
-            android:layout_height="140dp"
-            android:background="@drawable/natural_history"
-            android:fontFamily="sans-serif-condensed-medium"
-            android:text="@string/natural_history_btn"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/met_pic"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/met" />
 
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="match_parent"
-            android:layout_height="140dp"
-            android:background="@drawable/guggenheim"
-            android:fontFamily="sans-serif-condensed-medium"
-            android:text="@string/guggenheim_btn"
-            android:textColor="#FFEA00"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-    </LinearLayout>
+                <Button
+                    android:id="@+id/met_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#802979FF"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="@string/met_btn"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/natural_history_pic"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/natural_history" />
+
+                <Button
+                    android:id="@+id/natural_history_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#8000E676"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="@string/natural_history_btn"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/guggenheim_pic"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/guggenheim" />
+
+                <Button
+                    android:id="@+id/guggenheim_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#8003DAC5"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="@string/guggenheim_btn"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/modern_art_pic"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/modern_art" />
+
+                <Button
+                    android:id="@+id/modern_art_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#80FF9100"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="@string/modern_art_btn"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

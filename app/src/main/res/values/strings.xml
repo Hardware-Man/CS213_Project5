@@ -5,4 +5,7 @@
     <string name="natural_history_btn">American Museum of Natural History</string>
     <string name="guggenheim_btn">Solomon R. Guggenheim Museum</string>
     <string name="met_pic">met_pic</string>
+    <string name="natural_history_pic">natural_history_pic</string>
+    <string name="guggenheim_pic">guggenheim_pic</string>
+    <string name="modern_art_pic">modern_art_pic</string>
 </resources>
