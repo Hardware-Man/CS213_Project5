@@ -14,6 +14,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        setTitle("NYC Museums");
+
         Button metSelect = findViewById(R.id.met_select);
         Button naturalHistorySelect = findViewById(R.id.natural_history_select);
         Button guggenheimSelect = findViewById(R.id.guggenheim_select);

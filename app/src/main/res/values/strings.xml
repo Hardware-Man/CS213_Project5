@@ -17,4 +17,12 @@
     <string name="senior_ticket_price">Senior Admission:</string>
     <string name="student_ticket_price">Student Admission:</string>
     <string name="website_tap_reminder">(Click on image to visit website)</string>
+    <string name="senior_tickets">Senior Tickets: 0</string>
+    <string name="student_tickets">Student Tickets: 0</string>
+    <string name="adult_tickets">Adult Tickets: 0</string>
+    <string name="ticket_pricing">Ticket Pricing:</string>
+    <string name="zero_tick_price">$0</string>
+    <string name="sales_tax">Sales Tax:</string>
+    <string name="zero_dec_price">$0.00</string>
+    <string name="total">Total:</string>
 </resources>

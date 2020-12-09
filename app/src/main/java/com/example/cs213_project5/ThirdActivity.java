@@ -23,15 +23,19 @@ public class ThirdActivity extends AppCompatActivity {
         webView.setWebViewClient(new WebViewClient());
         switch (MainActivity.selectedMuseum) {
             case "met":
+                setTitle("Metropolitan Museum of Art Website");
                 webView.loadUrl("https://www.metmuseum.org/");
                 break;
             case "natural":
+                setTitle("American Museum of Natural History Website");
                 webView.loadUrl("https://www.amnh.org/");
                 break;
             case "guggenheim":
+                setTitle("Solomon R. Guggenheim Museum Website");
                 webView.loadUrl("https://www.guggenheim.org/");
                 break;
             default:
+                setTitle("Museum of Modern Art Website");
                 webView.loadUrl("https://www.moma.org/");
         }
 
