@@ -6,14 +6,40 @@
     android:layout_height="match_parent"
     tools:context=".SecondActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/met"
-        android:contentDescription="@string/met_pic" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/museumSelection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/museum_pic" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/adult_ticket_price" />
+
+            <TextView
+                android:id="@+id/seniorTicket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/senior_ticket_price" />
+
+            <TextView
+                android:id="@+id/studentTicket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/student_ticket_price" />
+
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

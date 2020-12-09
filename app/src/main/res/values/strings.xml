@@ -8,4 +8,12 @@
     <string name="natural_history_pic">natural_history_pic</string>
     <string name="guggenheim_pic">guggenheim_pic</string>
     <string name="modern_art_pic">modern_art_pic</string>
+    <string name="museum_pic">museum_pic</string>
+    <string name="ticket_type">ticket_type</string>
+    <string name="adult">Adult</string>
+    <string name="senior">Senior</string>
+    <string name="student">Student</string>
+    <string name="adult_ticket_price">Adult Ticket Price:</string>
+    <string name="senior_ticket_price">Senior Ticket Price:</string>
+    <string name="student_ticket_price">Student Ticket Price:</string>
 </resources>

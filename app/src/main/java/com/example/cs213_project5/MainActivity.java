@@ -1,12 +1,13 @@
 package com.example.cs213_project5;
 
 import android.content.Intent;
-import android.view.View;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
+
+    protected static String selectedMuseum = "met";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,34 +19,21 @@ public class MainActivity extends AppCompatActivity {
         Button guggenheimSelect = findViewById(R.id.guggenheim_select);
         Button modernArtSelect = findViewById(R.id.modern_art_select);
 
-        metSelect.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                launchActivity();
-            }
+        metSelect.setOnClickListener(v -> {
+            startActivity(new Intent(this, SecondActivity.class));
+            selectedMuseum = "met";
         });
-        naturalHistorySelect.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                launchActivity();
-            }
+        naturalHistorySelect.setOnClickListener(v -> {
+            startActivity(new Intent(this, SecondActivity.class));
+            selectedMuseum = "natural";
         });
-        guggenheimSelect.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                launchActivity();
-            }
+        guggenheimSelect.setOnClickListener(v -> {
+            startActivity(new Intent(this, SecondActivity.class));
+            selectedMuseum = "guggenheim";
         });
-        modernArtSelect.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                launchActivity();
-            }
+        modernArtSelect.setOnClickListener(v -> {
+            startActivity(new Intent(this, SecondActivity.class));
+            selectedMuseum = "modern";
         });
-    }
-
-    private void launchActivity() {
-        Intent intent = new Intent(this, SecondActivity.class);
-        startActivity(intent);
     }
 }
