@@ -128,8 +128,7 @@ public class SecondActivity extends AppCompatActivity {
         }
 
         int ticketPricing = adultTickPrice * numAdultTick + seniorTickPrice * numSeniorTick + studentTickPrice * numStudentTick;
-        double NYC_SALES_TAX = 0.08875;
-        double salesTaxPrice = NYC_SALES_TAX * ticketPricing;
+        double salesTaxPrice = 0.08875 * ticketPricing;
         double totalPrice = ticketPricing + salesTaxPrice;
 
         DecimalFormat moneyFormat = new DecimalFormat("0.00");
