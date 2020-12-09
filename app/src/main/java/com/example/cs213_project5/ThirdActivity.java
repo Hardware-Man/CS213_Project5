@@ -8,10 +8,19 @@ import android.os.Bundle;
 
 import java.util.Objects;
 
+/**
+ * Class to run the third activity of Android Museum app:
+ * Clicking on museum image to go to museum website
+ * @author Kaivalya Mishra, Ridwanur Sarder
+ */
 public class ThirdActivity extends AppCompatActivity {
 
     private WebView webView;
 
+    /**
+     * Initializes environment to allow museum image to lead to museum website
+     * @param savedInstanceState bundle for current screen
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,6 +52,9 @@ public class ThirdActivity extends AppCompatActivity {
         webSettings.setJavaScriptEnabled(true);
     }
 
+    /**
+     * Goes to the previous screen(second activity)
+     */
     @Override
     public void onBackPressed() {
         if (webView.canGoBack()) {

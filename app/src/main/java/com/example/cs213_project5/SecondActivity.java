@@ -11,6 +11,11 @@ import android.widget.Toast;
 import java.text.DecimalFormat;
 import java.util.Objects;
 
+/**
+ * Class to run the second activity of Android Museum app:
+ * Based on number of and types of tickets, determine price and tax
+ * @author Kaivalya Mishra, Ridwanur Sarder
+ */
 public class SecondActivity extends AppCompatActivity {
 
     private int numAdultTick = 0;
@@ -21,6 +26,10 @@ public class SecondActivity extends AppCompatActivity {
     private int seniorTickPrice = 0;
     private int studentTickPrice = 0;
 
+    /**
+     * Initializes environment for ticket activity
+     * @param savedInstanceState Bundle instance of current screen
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -94,6 +103,12 @@ public class SecondActivity extends AppCompatActivity {
         removeStudent.setOnClickListener(v -> changeTicketPricing('s',false));
     }
 
+    /**
+     * Changes the price of tickets based off how many tickets have been chosen
+     * Also does not allow for more than 5 tickets to be ordered
+     * @param ticketType type of ticket in question
+     * @param increase true if ticket amount was increased, false otherwise
+     */
     private void changeTicketPricing(char ticketType, boolean increase) {
         switch (ticketType) {
             case 'a':
