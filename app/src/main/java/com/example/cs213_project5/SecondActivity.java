@@ -38,6 +38,7 @@ public class SecondActivity extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         Toast.makeText(getApplicationContext(),"Maximum of 5 tickets for each!",Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(),"Click on image to visit website",Toast.LENGTH_SHORT).show();
 
         ImageView museumPicture = findViewById(R.id.museumSelection);
 
@@ -143,8 +144,7 @@ public class SecondActivity extends AppCompatActivity {
         }
 
         int ticketPricing = adultTickPrice * numAdultTick + seniorTickPrice * numSeniorTick + studentTickPrice * numStudentTick;
-        double NYC_SALES_TAX = 0.08875;
-        double salesTaxPrice = NYC_SALES_TAX * ticketPricing;
+        double salesTaxPrice = 0.08875 * ticketPricing;
         double totalPrice = ticketPricing + salesTaxPrice;
 
         DecimalFormat moneyFormat = new DecimalFormat("0.00");

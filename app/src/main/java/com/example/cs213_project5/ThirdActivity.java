@@ -1,6 +1,5 @@
 package com.example.cs213_project5;
 
-import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import androidx.appcompat.app.AppCompatActivity;
@@ -29,6 +28,7 @@ public class ThirdActivity extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         webView = findViewById(R.id.webview);
+        webView.getSettings().setJavaScriptEnabled(true);
         webView.setWebViewClient(new WebViewClient());
         switch (MainActivity.selectedMuseum) {
             case "met":
@@ -47,9 +47,6 @@ public class ThirdActivity extends AppCompatActivity {
                 setTitle("Museum of Modern Art Website");
                 webView.loadUrl("https://www.moma.org/");
         }
-
-        WebSettings webSettings = webView.getSettings();
-        webSettings.setJavaScriptEnabled(true);
     }
 
     /**
