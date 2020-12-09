@@ -29,6 +29,7 @@ public class SecondActivity extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         Toast.makeText(getApplicationContext(),"Maximum of 5 tickets for each!",Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(),"Click on image to visit website",Toast.LENGTH_SHORT).show();
 
         ImageView museumPicture = findViewById(R.id.museumSelection);
 
